@@ -1,0 +1,123 @@
+﻿@page "/craftskillarray2"
+@inject HttpClient Http
+
+<MatH5>CraftSkills2</MatH5>
+
+
+    <MatAccordion>
+        @foreach (var group in SkillGroups)
+        {
+            <MatExpansionPanel>
+                <MatExpansionPanelSummary>
+                    <MatExpansionPanelHeader><MatSubtitle2>@group.Key</MatSubtitle2></MatExpansionPanelHeader>
+                    <MatExpansionPanelSubHeader></MatExpansionPanelSubHeader>
+                </MatExpansionPanelSummary>
+                <MatExpansionPanelDetails>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th><MatBody1>Name</MatBody1></th>
+                                <th><MatBody1>Description</MatBody1></th>
+                                <th><MatBody1>Level</MatBody1></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var row in group)
+                            {
+                            <tr>
+                                <td><MatBody2>@row.Name</MatBody2></td>
+                                <td><MatBody2>@row.Description</MatBody2></td>
+                                <td><MatBody2></MatBody2></td>
+                                <td>
+                                    <MatBody2><form>
+                                        @foreach (var l in Levels)
+                                        {
+                                            <input name="level" type="radio" value="@l" checked="@CheckItem(@l, row.Level)" @onclick="@(e=> SetItem(@l, row.Name))">@l
+                                        }
+
+                                        </form>
+                                        @*<MatRadioGroup @bind-Value="@Level" Items="@Levels">
+                    <ItemTemplate>
+                        <MatRadioButton Value="@context" checked="@CheckItem(context, row.Level)" @onclick="@(e=> SetItem(@context, row.Name))">@context</MatRadioButton>
+                    </ItemTemplate>
+                </MatRadioGroup>*@
+                                    </MatBody2>
+                                </td>
+                            </tr>
+                            }
+                        </tbody>
+                    </table>
+                </MatExpansionPanelDetails>
+            </MatExpansionPanel>
+        }
+    </MatAccordion>
+
+
+
+
+@code {
+
+    [Parameter]
+    public Models.Skill[] SkillArray { get; set; }
+
+    [Parameter]
+    public EventCallback<Models.Skill[]> SkillArrayChanged { get; set; }
+
+    async Task UpdateSkillArray()
+    {
+        await SkillArrayChanged.InvokeAsync(SkillArray);
+    }
+
+    [Parameter]
+    public IEnumerable<IGrouping<string, Models.Skill>> SkillGroups { get; set; }
+
+    [Parameter]
+    public EventCallback<IEnumerable<IGrouping<string, Models.Skill>>> SkillGroupsChanged { get; set; }
+
+    async Task UpdateSkillGroups()
+    {
+        await SkillGroupsChanged.InvokeAsync(SkillGroups);
+    }
+
+
+
+    //comment
+    protected string Level;
+    protected string[] Levels =
+        {
+                "0",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5"
+            };
+
+    bool panelOpenState;
+
+
+    public Boolean CheckItem(string a, int l)
+    {
+        if (a == l.ToString())
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    void SetItem(string a, string name)
+    {
+        foreach (var skill in SkillArray)
+        {
+            if (skill.Name == name)
+            {
+                skill.Level = int.Parse(a);
+            }
+        }
+    }
+
+
+}

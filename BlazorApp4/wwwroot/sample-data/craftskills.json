@@ -1,0 +1,977 @@
+[
+{
+"Group": "Fuel Productivity",
+"Name": "Atmospheric Fuel Productivity",
+"Description": "+5 % Atmospheric Fuel when running Atmospheric Fuel recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+5", "%", "Nitron Fuel"]}]
+},
+{
+"Group": "Fuel Productivity",
+"Name": "Space Fuel Productivity",
+"Description": "+5 % Space Fuel when running Space Fuel recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+5", "%", "Kergon-X1 Fuel"]},
+		  {"Recipe":["Out", "+5", "%", "Kergon-X2 Fuel"]},
+		  {"Recipe":["Out", "+5", "%", "Kergon-X3 Fuel"]},
+		  {"Recipe":["Out", "+5", "%", "Kergon-X4 Fuel"]}]
+},
+{
+"Group": "Fuel Productivity",
+"Name": "Rocket Fuel Productivity",
+"Description": "+5 % Rocket Fuel when running Rocket Fuel recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+5", "%", "Xeron Fuel"]}]
+},
+{
+"Group": "Fuel Refining",
+"Name": "Fuel Refinery",
+"Description": "-2 % input material required for refining all fuels",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-2", "%", "Nitron Fuel"]},
+		  {"Recipe":["In", "-2", "%", "Kergon-X1 Fuel"]},
+		  {"Recipe":["In", "-2", "%", "Kergon-X2 Fuel"]},
+		  {"Recipe":["In", "-2", "%", "Kergon-X3 Fuel"]},
+		  {"Recipe":["In", "-2", "%", "Kergon-X4 Fuel"]},
+		  {"Recipe":["In", "-2", "%", "Xeron Fuel"]}]
+},
+{
+"Group": "Fuel Refining",
+"Name": "Atmospheric Fuel Refinery",
+"Description": "-3 % input material required for refining all Atmospheric Fuels",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-3", "%", "Nitron Fuel"]}]
+},
+{
+"Group": "Fuel Refining",
+"Name": "Space Fuel Refinery",
+"Description": "-3 % input material required for refining all Space Fuels",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-3", "%", "Kergon-X1 Fuel"]},
+		  {"Recipe":["In", "-3", "%", "Kergon-X2 Fuel"]},
+		  {"Recipe":["In", "-3", "%", "Kergon-X3 Fuel"]},
+		  {"Recipe":["In", "-3", "%", "Kergon-X4 Fuel"]}]
+},
+{
+"Group": "Fuel Refining",
+"Name": "Rocket Fuel Refinery",
+"Description": "-3 % input material required for refining all Rocket Fuels",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-3", "%", "Xeron Fuel"]}]
+},
+{
+"Group": "Intermediary Part Productivity",
+"Name": "Basic Intermediary Part Productivity",
+"Description": "+1 Basic Intermediary Part when running Basic Intermediary parts recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+1", "Q", "Basic Component"]}]
+},
+{
+"Group": "Intermediary Part Productivity",
+"Name": "Uncommon Intermediary Part Productivity",
+"Description": "+1 Uncommon Intermediary Part when running Uncommon Intermediary parts recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+1", "Q", "Uncommon Component"]}]
+},
+{
+"Group": "Intermediary Part Productivity",
+"Name": "Advanced Intermediary Part Productivity",
+"Description": "+1 Advanced Intermediary Part when running Advanced Intermediary parts recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+1", "Q", "Advanced Component"]}]
+},
+{
+"Group": "Basic Ore Refining",
+"Name": "Carbon Ore Refining",
+"Description": "-3 % input material required for refining Carbon ore",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-3", "%", "Carbon Pure"]}]
+},
+{
+"Group": "Basic Ore Refining",
+"Name": "Iron Ore Refining",
+"Description": "-3 % input material required for refining Iron ore",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-3", "%", "Iron Pure"]}]
+},
+{
+"Group": "Basic Ore Refining",
+"Name": "Aluminium Ore Refining",
+"Description": "-3 % input material required for refining Aluminium ore",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-3", "%", "Aluminium Pure"]}]
+},
+{
+"Group": "Basic Ore Refining",
+"Name": "Silicon Ore Refining",
+"Description": "-3 % input material required for refining Silicon ore",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-3", "%", "Silicon Pure"]}]
+},
+{
+"Group": "Basic Pure Productivity",
+"Name": "Carbon Pure Productivity",
+"Description": "+3 % Carbon Pure when running Carbon Pure recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+3", "%", "Carbon Pure"]}]
+},
+{
+"Group": "Basic Pure Productivity",
+"Name": "Iron Pure Productivity",
+"Description": "+3 % Iron Pure when running Iron Pure recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+3", "%", "Iron Pure"]}]
+},
+{
+"Group": "Basic Pure Productivity",
+"Name": "Aluminium Pure Productivity",
+"Description": "+3 % Aluminium Pure when running Aluminium Pure recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+3", "%", "Aluminium Pure"]}]
+},
+{
+"Group": "Basic Pure Productivity",
+"Name": "Silicon Pure Productivity",
+"Description": "+3 % Silicon Pure when running Silicon Pure recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+3", "%", "Silicon Pure"]}]
+},
+{
+"Group": "Basic Product Refining",
+"Name": "Al-Fe alloy Product Refining",
+"Description": "-3 % input material required for refining Al-Fe alloy",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-3", "%", "Al-Fe Alloy"]}]
+},
+{
+"Group": "Basic Product Refining",
+"Name": "Polycarbonate plastic Product Refining",
+"Description": "-3 % input material required for refining Polycarbonate plastic",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-3", "%", "Polycarbonate Plastic"]}]
+},
+{
+"Group": "Basic Product Refining",
+"Name": "Silumin Product Refining",
+"Description": "-3 % input material required for refining Silumin",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-3", "%", "Silumin"]}]
+},
+{
+"Group": "Basic Product Refining",
+"Name": "Steel Product Refining",
+"Description": "-3% input material required for refining Steel",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-3", "%", "Steel"]}]
+},
+{
+"Group": "Basic Product Refining",
+"Name": "Glass Product Refining",
+"Description": "-3 % input material required for refining Glass",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-3", "%", "Glass"]}]
+},
+{
+"Group": "Basic Product Productivity",
+"Name": "AlFe Product Productivity",
+"Description": "+3 % AlFe Product when running AlFe Product Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+3", "%", "Al-Fe Alloy"]}]
+},
+{
+"Group": "Basic Product Productivity",
+"Name": "Polycarbonate Plastic Product Productivity",
+"Description": "+3 % Polycarbonate Plastic Product when running Polycarbonate Plastic Product Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+3", "%", "Polycarbonate Plastic"]}]
+},
+{
+"Group": "Basic Product Productivity",
+"Name": "Silumin Product Productivity",
+"Description": "+3 % Silumin Product when running Silumin Product Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+3", "%", "Silumin"]}]
+},
+{
+"Group": "Basic Product Productivity",
+"Name": "Steel Product Productivity",
+"Description": "+3 % Steel Product when running Steel Product Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+3", "%", "Steel"]}]
+},
+{
+"Group": "Basic Product Productivity",
+"Name": "Glass Product Productivity",
+"Description": "+3 % Glass Product when running Glass Product Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+3", "%", "Glass"]}]
+},
+{
+"Group": "Uncommon Ore Refining",
+"Name": "Sodium Ore Refining",
+"Description": "-3 % input material required for refining Sodium ore",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-3", "%", "Sodium Pure"]}]
+},
+{
+"Group": "Uncommon Ore Refining",
+"Name": "Calcium Ore Refining",
+"Description": "-3 % input material required for refining Calcium ore",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-3", "%", "Calcium Pure"]}]
+},
+{
+"Group": "Uncommon Ore Refining",
+"Name": "Chromium Ore Refining",
+"Description": "-3 % input material required for refining Chromium ore",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-3", "%", "Chromium Pure"]}]
+},
+{
+"Group": "Uncommon Ore Refining",
+"Name": "Copper Ore Refining",
+"Description": "-3 % input material required for refining Copper ore",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-3", "%", "Copper Pure"]}]
+},
+{
+"Group": "Uncommon Pure Productivity",
+"Name": "Sodium Pure Productivity",
+"Description": "+3 % Sodium Pure when running Sodium Pure Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+3", "%", "Sodium Pure"]}]
+},
+{
+"Group": "Uncommon Pure Productivity",
+"Name": "Calcium Pure Productivity",
+"Description": "+3 % Calcium Pure when running Calcium Pure Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+3", "%", "Calcium Pure"]}]
+},
+{
+"Group": "Uncommon Pure Productivity",
+"Name": "Chromium Pure Productivity",
+"Description": "+3 % Chromium Pure when running Chromium Pure Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+3", "%", "Chromium Pure"]}]
+},
+{
+"Group": "Uncommon Pure Productivity",
+"Name": "Copper Pure Productivity",
+"Description": "+3 % Copper Pure when running Copper Pure Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+3", "%", "Copper Pure"]}]
+},
+{
+"Group": "Uncommon Product Refining",
+"Name": "Calcium reinforced copper Product Refining",
+"Description": "-3 % input material required for refining Calcium reinforced copper",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-3", "%", "Calcium Reinforced Copper"]}]
+},
+{
+"Group": "Uncommon Product Refining",
+"Name": "Polycalcite plastic Product Refining",
+"Description": "-3 % input material required for refining Polycalcite plastic",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-3", "%", "Polycalcite Plastic"]}]
+},
+{
+"Group": "Uncommon Product Refining",
+"Name": "Duralumin Product Refining",
+"Description": "-3 % input material required for refining Duralumin",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-3", "%", "Duralumin"]}]
+},
+{
+"Group": "Uncommon Product Refining",
+"Name": "Stainless Steel Product Refining",
+"Description": "-3 % input material required for refining Stainless Steel",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-3", "%", "Stainless Steel"]}]
+},
+{
+"Group": "Uncommon Product Refining",
+"Name": "Advanced glass Product Refining",
+"Description": "-3 % input material required for refining Advanced glass",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-3", "%", "Advanced Glass"]}]
+},
+{
+"Group": "Uncommon Product Productivity",
+"Name": "Calcium Reinforced Copper Product Productivity",
+"Description": "+3 % Calcium Reinforced Copper Product when running Calcium Reinforced Copper Product Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+3", "%", "Calcium Reinforced Copper"]}]
+},
+{
+"Group": "Uncommon Product Productivity",
+"Name": "Polycalcite Plastic Product Productivity",
+"Description": "+3 % Polycalcite Plastic Product when running Polycalcite Plastic Product Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+3", "%", "Polycalcite Plastic"]}]
+},
+{
+"Group": "Uncommon Product Productivity",
+"Name": "Duralumin Product Productivity",
+"Description": "+3 % Duralumin Product when running Duralumin Product Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+3", "%", "Duralumin"]}]
+},
+{
+"Group": "Uncommon Product Productivity",
+"Name": "Stainless Steel Product Productivity",
+"Description": "+3 % Stainless Steel Product when running Stainless Steel Product Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+3", "%", "Stainless Steel"]}]
+},
+{
+"Group": "Uncommon Product Productivity",
+"Name": "Advanced Glass Product Productivity",
+"Description": "+3 % Advanced Glass Product when running Advanced Glass Product Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+3", "%", "Advanced Glass"]}]
+},
+{
+"Group": "Advanced Ore Refining",
+"Name": "Lithium Ore Refining",
+"Description": "-3 % input material required for refining Lithium ore",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-3", "%", "Lithium Pure"]}]
+},
+{
+"Group": "Advanced Ore Refining",
+"Name": "Sulfur Ore Refining",
+"Description": "-3 % input material required for refining Sulfur ore",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-3", "%", "Sulfur Pure"]}]
+},
+{
+"Group": "Advanced Ore Refining",
+"Name": "Nickel Ore Refining",
+"Description": "-3 % input material required for refining Nickel ore",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-3", "%", "Nickel Pure"]}]
+},
+{
+"Group": "Advanced Ore Refining",
+"Name": "Silver Ore Refining",
+"Description": "-3 % input material required for refining Silver ore",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-3", "%", "Silver Pure"]}]
+},
+{
+"Group": "Advanced Pure Productivity",
+"Name": "Lithium Pure Productivity",
+"Description": "+3 % Lithium Pure when running Lithium Pure Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+3", "%", "Lithium Pure"]}]
+},
+{
+"Group": "Advanced Pure Productivity",
+"Name": "Sulfur Pure Productivity",
+"Description": "+3 % Sulfur Pure when running Sulfur Pure Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+3", "%", "Sulfur Pure"]}]
+},
+{
+"Group": "Advanced Pure Productivity",
+"Name": "Nickel Pure Productivity",
+"Description": "+3 % Nickel Pure when running Nickel Pure Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+3", "%", "Nickel Pure"]}]
+},
+{
+"Group": "Advanced Pure Productivity",
+"Name": "Silver Pure Productivity",
+"Description": "+3 % Silver Pure when running Silver Pure Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+3", "%", "Silver Pure"]}]
+},
+{
+"Group": "Advanced Product Refining",
+"Name": "Cu-Ag alloy Product Refining",
+"Description": "-3 % input material required for refining Cu-AG alloy",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-3", "%", "Cu-Ag Alloy"]}]
+},
+{
+"Group": "Advanced Product Refining",
+"Name": "Polysulfide plastic Product Refining",
+"Description": "-3 % input material required for refining Polysulfide plastic",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-3", "%", "Polysulfide Plastic"]}]
+},
+{
+"Group": "Advanced Product Refining",
+"Name": "Al-Li alloy Product Refining",
+"Description": "-3 % input material required for refining Al-Li alloy",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-3", "%", "Al-Li Alloy"]}]
+},
+{
+"Group": "Advanced Product Refining",
+"Name": "Inconel Product Refining",
+"Description": "-3 % input material required for refining Inconel",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-3", "%", "Inconel"]}]
+},
+{
+"Group": "Advanced Product Refining",
+"Name": "Ag-Li reinforced glass Product",
+"Description": "-3% input material required for refining AG-Li alloy",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-3", "%", "Ag-Li Reinforced Glass"]}]
+},
+{
+"Group": "Advanced Product Productivity",
+"Name": "CuAg Product Productivity",
+"Description": "+3 % CuAg Product when running CuAg Product Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+3", "%", "Cu-Ag Alloy"]}]
+},
+{
+"Group": "Advanced Product Productivity",
+"Name": "Polysulfide Plastic Product Productivity",
+"Description": "+3 % Polysulfide Plastic Product when running Polysulfide Plastic Product Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+3", "%", "Polysulfide Plastic"]}]
+},
+{
+"Group": "Advanced Product Productivity",
+"Name": "AlLi Product Productivity",
+"Description": "+3 % AlLi Product when running AlLi Product Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+3", "%", "Al-Li Alloy"]}]
+},
+{
+"Group": "Advanced Product Productivity",
+"Name": "Inconel Product Productivity",
+"Description": "+3 % Inconel Product when running Inconel Product Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+3", "%", "Inconel"]}]
+},
+{
+"Group": "Advanced Product Productivity",
+"Name": "AgLi Reinforced Glass Product Productivity",
+"Description": "+3 % AgLi Reinforced Glass Product when running AgLi Reinforced Glass Product Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+3", "%", "Ag-Li Reinforced Glass"]}]
+},
+{
+"Group": "Rare Ore Refining",
+"Name": "Gold Ore Refining",
+"Description": "-3 % input material required for refining Gold ore",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-3", "%", "Gold Pure"]}]
+},
+{
+"Group": "Rare Ore Refining",
+"Name": "Cobalt Ore",
+"Description": "-3 % input material required for refining Cobalt ore",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-3", "%", "Cobalt Pure"]}]
+},
+{
+"Group": "Rare Ore Refining",
+"Name": "Scandium Ore Refining",
+"Description": "-3 % input material required for refining Scandium ore",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-3", "%", "Scandium Pure"]}]
+},
+{
+"Group": "Rare Ore Refining",
+"Name": "Fluorine Ore Refining",
+"Description": "-3 % input material required for refining Fluorine ore",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-3", "%", "Fluorine Pure"]}]
+},
+{
+"Group": "Rare Pure Productivity",
+"Name": "Gold Pure Productivity",
+"Description": "+3 % Gold Pure when running Gold Pure Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+3", "%", "Gold Pure"]}]
+},
+{
+"Group": "Rare Pure Productivity",
+"Name": "Cobalt Pure Productivity",
+"Description": "+3 % Cobalt Pure when running Cobalt Pure Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+3", "%", "Cobalt Pure"]}]
+},
+{
+"Group": "Rare Pure Productivity",
+"Name": "Scandium Pure Productivity",
+"Description": "+3 % Scandium Pure when running Scandium Pure Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+3", "%", "Scandium Pure"]}]
+},
+{
+"Group": "Rare Pure Productivity",
+"Name": "Fluorine Pure Productivity",
+"Description": "+3 % Fluorine Pure when running Sodium Pure Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+3", "%", "Fluorine Pure"]}]
+},
+{
+"Group": "Rare Product Refining",
+"Name": "Red Gold Product Refining",
+"Description": "-3 % input material required for refining Red gold",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-3", "%", "Red Gold"]}]
+},
+{
+"Group": "Rare Product Refining",
+"Name": "Fluoropolymer Product Refining",
+"Description": "-3 % input material required for refining Fluoropolymer",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-3", "%", "Fluoropolymer"]}]
+},
+{
+"Group": "Rare Product Refining",
+"Name": "Sc-Al alloy Product Refing",
+"Description": "-3 % input material required for refining Sc-Al alloy",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-3", "%", "Sc-Al Alloy"]}]
+},
+{
+"Group": "Rare Product Refining",
+"Name": "Maraging steel Product Refining",
+"Description": "-3 % input material required for refining Maraging steel",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-3", "%", "Maraging Steel"]}]
+},
+{
+"Group": "Rare Product Refining",
+"Name": "Gold coated glass Product",
+"Description": "-3 % input material required for refining Gold coated glass",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-3", "%", "Gold Coated Glass"]}]
+},
+{
+"Group": "Rare Product Productivity",
+"Name": "Red Gold Product Productivity",
+"Description": "+3 % Red Gold Product when running Red Gold Product Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+3", "%", "Red Gold"]}]
+},
+{
+"Group": "Rare Product Productivity",
+"Name": "Fluoropolymer Product Productivity",
+"Description": "+3 % Fluoropolymer Product when running Fluoropolymer Product Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+3", "%", "Fluoropolymer"]}]
+},
+{
+"Group": "Rare Product Productivity",
+"Name": "ScAl Product Productivity",
+"Description": "+3 % ScAl Product when running ScAl Product Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+3", "%", "Sc-Al Alloy"]}]
+},
+{
+"Group": "Rare Product Productivity",
+"Name": "Maraging Steel Product Productivity",
+"Description": "+3 % Maraging Steel Product when running Maraging Steel Product Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+3", "%", "Maraging Steel"]}]
+},
+{
+"Group": "Rare Product Productivity",
+"Name": "Gold Coated Glass Product Productivity",
+"Description": "+3 % Gold Coated Glass Product when running Gold Coated Glass Product Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+3", "%", "Gold Coated Glass"]}]
+},
+{
+"Group": "Exotic Ore Refining",
+"Name": "Titanium Ore Refining",
+"Description": "-3 % input material required for refining Titanium ore",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-3", "%", "Titanium Pure"]}]
+},
+{
+"Group": "Exotic Ore Refining",
+"Name": "Manganese Ore Refining",
+"Description": "-3 % input material required for refining Manganese ore",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-3", "%", "Manganese Pure"]}]
+},
+{
+"Group": "Exotic Ore Refining",
+"Name": "Vanadium Ore Refining",
+"Description": "-3 % input material required for refining Vanadium ore",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-3", "%", "Vanadium Pure"]}]
+},
+{
+"Group": "Exotic Ore Refining",
+"Name": "Niobium Ore Refining",
+"Description": "-3 % input material required for refining Niobium ore",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-3", "%", "Niobium Pure"]}]
+},
+{
+"Group": "Exotic Pure Productivity",
+"Name": "Titanium Pure Productivity",
+"Description": "+3 % Titanium Pure when running Titanium Pure Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+3", "%", "Titanium Pure"]}]
+},
+{
+"Group": "Exotic Pure Productivity",
+"Name": "Manganese Pure Productivity",
+"Description": "+3 % Manganese Pure when running Manganese Pure Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+3", "%", "Manganese Pure"]}]
+},
+{
+"Group": "Exotic Pure Productivity",
+"Name": "Vanadium Pure Productivity",
+"Description": "+3 % Vanadium Pure when running Vanadium Pure Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+3", "%", "Vanadium Pure"]}]
+},
+{
+"Group": "Exotic Pure Productivity",
+"Name": "Niobium Pure Productivity",
+"Description": "+3 % Niobium Pure when running Niobium Pure Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+3", "%", "Niobium Pure"]}]
+},
+{
+"Group": "Exotic Product Refining",
+"Name": "Ti-Nb Supraconductor Product Refining",
+"Description": "-3 % input material required for refining Ti-Nb Supraconductor",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-3", "%", "Ti-Nb Supraconductor"]}]
+},
+{
+"Group": "Exotic Product Refining",
+"Name": "Vanamer Product Refining",
+"Description": "-3 % input material required for refining Vanamer",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-3", "%", "Vanamer"]}]
+},
+{
+"Group": "Exotic Product Refining",
+"Name": "Grade 5 Titanium Alloy Product Refining",
+"Description": "-3 % input material required for refining Grade 5 Titanium Alloy",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-3", "%", "Grade 5 Titanium Alloy"]}]
+},
+{
+"Group": "Exotic Product Refining",
+"Name": "Mangalloy Product Refining",
+"Description": "-3 % input material required for refining Mangalloy",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-3", "%", "Mangalloy"]}]
+},
+{
+"Group": "Exotic Product Refining",
+"Name": "Manganese reinforced glass Product",
+"Description": "-3 % input material required for refining Manganese reinforced glass",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-3", "%", "Manganese Reinforced Glass"]}]
+},
+{
+"Group": "Exotic Product Productivity",
+"Name": "TiNb Product Productivity",
+"Description": "+3 % TiNb Product when running TiNb Product Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+3", "%", "Ti-Nb Supraconductor"]}]
+},
+{
+"Group": "Exotic Product Productivity",
+"Name": "Vanamer Product Productivity",
+"Description": "+3 % Vanamer Product when running Vanamer Product Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+3", "%", "Vanamer"]}]
+},
+{
+"Group": "Exotic Product Productivity",
+"Name": "Grade 5 Titanium Alloy Product Productivity",
+"Description": "+3 % Grade 5 Titanium Alloy Product when running Grade 5 Titanium Alloy Product Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+3", "%", "Grade 5 Titanium Alloy"]}]
+},
+{
+"Group": "Exotic Product Productivity",
+"Name": "Mangalloy Product Productivity",
+"Description": "+3 % Mangalloy Product when running Mangalloy Product Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+3", "%", "Mangalloy"]}]
+},
+{
+"Group": "Exotic Product Productivity",
+"Name": "Manganese Reinforced Glass Product Productivity",
+"Description": "+3 % Manganese Reinforced Glass Product when running Manganese Reinforced Glass Product Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+3", "%", "Manganese Reinforced Glass"]}]
+},
+{
+"Group": "Basic Scrap Refining",
+"Name": "Basic Scrap Refinery",
+"Description": "-1L material per level requirred for refining all Basic Scraps",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-1", "Q", "Carbon Scrap"]},
+		  {"Recipe":["In", "-1", "Q", "Silicon Scrap"]},
+		  {"Recipe":["In", "-1", "Q", "Aluminium Scrap"]},
+		  {"Recipe":["In", "-1", "Q", "Iron Scrap"]}]
+},
+{
+"Group": "Basic Scrap Refining",
+"Name": "Carbon Scrap Refinery",
+"Description": "-2L material per level requirred for refining Carbon Scraps",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-2", "Q", "Carbon Scrap"]}]
+},
+{
+"Group": "Basic Scrap Refining",
+"Name": "Silicon Scrap Refinery",
+"Description": "-2L material per level requirred for refining Silicon Scraps",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-2", "Q", "Silicon Scrap"]}]
+},
+{
+"Group": "Basic Scrap Refining",
+"Name": "Aluminium Scrap Refinery",
+"Description": "-2L material per level requirred for refining Aluminium Scraps",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-2", "Q", "Aluminium Scrap"]}]
+},
+{
+"Group": "Basic Scrap Refining",
+"Name": "Iron Scrap Refinery",
+"Description": "-2L material per level requirred for refining Iron Scraps",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-2", "Q", "Iron Scrap"]}]
+},
+{
+"Group": "Basic Scrap Productivity",
+"Name": "Carbon Scrap Productivity",
+"Description": "+1 Scrap per level when running Carbon Scrap Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+1", "Q", "Carbon Scrap"]}]
+},
+{
+"Group": "Basic Scrap Productivity",
+"Name": "Silicon Scrap Productivity",
+"Description": "+1 Scrap per level when running Silicon Scrap Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+1", "Q", "Silicon Scrap"]}]
+},
+{
+"Group": "Basic Scrap Productivity",
+"Name": "Aluminium Scrap Productivity",
+"Description": "+1 Scrap per level when running Aluminium Scrap Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+1", "Q", "Aluminium Scrap"]}]
+},
+{
+"Group": "Basic Scrap Productivity",
+"Name": "Iron Scrap Productivity",
+"Description": "+1 Scrap per level when running Iron Scrap Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+1", "Q", "Iron Scrap"]}]
+},
+{
+"Group": "Uncommon Scrap Refining",
+"Name": "Uncommon Scrap Refinery",
+"Description": "-1L material per level requirred for refining all Uncommon Scraps",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-1", "Q", "Sodium Scrap"]},
+		  {"Recipe":["In", "-1", "Q", "Calcium Scrap"]},
+		  {"Recipe":["In", "-1", "Q", "Chromium Scrap"]},
+		  {"Recipe":["In", "-1", "Q", "Copper Scrap"]}]
+},
+{
+"Group": "Uncommon Scrap Refining",
+"Name": "Sodium Scrap Refinery",
+"Description": "-2L material per level requirred for refining Sodium Scraps",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-2", "Q", "Sodium Scrap"]}]
+},
+{
+"Group": "Uncommon Scrap Refining",
+"Name": "Calcium Scrap Refinery",
+"Description": "-2L material per level requirred for refining Calcium Scraps",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-2", "Q", "Calcium Scrap"]}]
+},
+{
+"Group": "Uncommon Scrap Refining",
+"Name": "Chromium Scrap Refinery",
+"Description": "-2L material per level requirred for refining Chromium Scraps",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-2", "Q", "Chromium Scrap"]}]
+},
+{
+"Group": "Uncommon Scrap Refining",
+"Name": "Copper Scrap Refinery",
+"Description": "-2L material per level requirred for refining Copper Scraps",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-2", "Q", "Copper Scrap"]}]
+},
+{
+"Group": "Uncommon Scrap Productivity",
+"Name": "Sodium Scrap Productivity",
+"Description": "+1 Scrap per level when running Sodium Scrap Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+1", "Q", "Sodium Scrap"]}]
+},
+{
+"Group": "Uncommon Scrap Productivity",
+"Name": "Calcium Scrap Productivity",
+"Description": "+1 Scrap per level when running Calcium Scrap Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+1", "Q", "Calcium Scrap"]}]
+},
+{
+"Group": "Uncommon Scrap Productivity",
+"Name": "Chromium Scrap Productivity",
+"Description": "+1 Scrap per level when running Chromium Scrap Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+1", "Q", "Chromium Scrap"]}]
+},
+{
+"Group": "Uncommon Scrap Productivity",
+"Name": "Copper Scrap Productivity",
+"Description": "+1 Scrap per level when running Copper Scrap Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+1", "Q", "Copper Scrap"]}]
+},
+{
+"Group": "Advanced Scrap Refining",
+"Name": "Advanced Scrap Refinery",
+"Description": "-1L material per level requirred for refining all Advanced Scraps",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-1", "Q", "Lithium Scrap"]},
+		  {"Recipe":["In", "-1", "Q", "Sulfur Scrap"]},
+		  {"Recipe":["In", "-1", "Q", "Nickel Scrap"]},
+		  {"Recipe":["In", "-1", "Q", "Silver Scrap"]}]
+},
+{
+"Group": "Advanced Scrap Refining",
+"Name": "Lithium Scrap Refinery",
+"Description": "-2L material per level requirred for refining Lithium Scraps",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-2", "Q", "Lithium Scrap"]}]
+},
+{
+"Group": "Advanced Scrap Refining",
+"Name": "Sulfur Scrap Refinery",
+"Description": "-2L material per level requirred for refining Sulfur Scraps",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-2", "Q", "Sulfur Scrap"]}]
+},
+{
+"Group": "Advanced Scrap Refining",
+"Name": "Nickel Scrap Refinery",
+"Description": "-2L material per level requirred for refining Nickel Scraps",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-2", "Q", "Nickel Scrap"]}]
+},
+{
+"Group": "Advanced Scrap Refining",
+"Name": "Silver Scrap Refinery",
+"Description": "-2L material per level requirred for refining Silver Scraps",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-2", "Q", "Silver Scrap"]}]
+},
+{
+"Group": "Advanced Scrap Productivity",
+"Name": "Lithium Scrap Productivity",
+"Description": "+1 Scrap per level when running Lithium Scrap Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+1", "Q", "Lithium Scrap"]}]
+},
+{
+"Group": "Advanced Scrap Productivity",
+"Name": "Sulfur Scrap Productivity",
+"Description": "+1 Scrap per level when running Sulfur Scrap Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+1", "Q", "Sulfur Scrap"]}]
+},
+{
+"Group": "Advanced Scrap Productivity",
+"Name": "Nickel Scrap Productivity",
+"Description": "+1 Scrap per level when running Nickel Scrap Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+1", "Q", "Nickel Scrap"]}]
+},
+{
+"Group": "Advanced Scrap Productivity",
+"Name": "Silver Scrap Productivity",
+"Description": "+1 Scrap per level when running Silver Scrap Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+1", "Q", "Silver Scrap"]}]
+},
+{
+"Group": "Rare Scrap Refining",
+"Name": "Rare Scrap Refinery",
+"Description": "-1L material per level requirred for refining all Rare Scraps",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-1", "Q", "Scandium Scrap"]},
+		  {"Recipe":["In", "-1", "Q", "Cobalt Scrap"]},
+		  {"Recipe":["In", "-1", "Q", "Gold Scrap"]},
+		  {"Recipe":["In", "-1", "Q", "Fluorine Scrap"]}]
+},
+{
+"Group": "Rare Scrap Refining",
+"Name": "Scandium Scrap Refinery",
+"Description": "-2L material per level requirred for refining Scandium Scraps",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-2", "Q", "Scandium Scrap"]}]
+},
+{
+"Group": "Rare Scrap Refining",
+"Name": "Cobalt Scrap Refinery",
+"Description": "-2L material per level requirred for refining Cobalt Scraps",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-2", "Q", "Cobalt Scrap"]}]
+},
+{
+"Group": "Rare Scrap Refining",
+"Name": "Gold Scrap Refinery",
+"Description": "-2L material per level requirred for refining Gold Scraps",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-2", "Q", "Gold Scrap"]}]
+},
+{
+"Group": "Rare Scrap Refining",
+"Name": "Fluorine Scrap Refinery",
+"Description": "-2L material per level requirred for refining Fluorine Scraps",
+"Level": 0,
+"Rules": [{"Recipe":["In", "-2", "Q", "Fluorine Scrap"]}]
+},
+{
+"Group": "Rare Scrap Productivity",
+"Name": "Scandium Scrap Productivity",
+"Description": "+1 Scrap per level when running Scandium Scrap Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+1", "Q", "Scandium Scrap"]}]
+},
+{
+"Group": "Rare Scrap Productivity",
+"Name": "Cobalt Scrap Productivity",
+"Description": "+1 Scrap per level when running Cobalt Scrap Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+1", "Q", "Cobalt Scrap"]}]
+},
+{
+"Group": "Rare Scrap Productivity",
+"Name": "Gold Scrap Productivity",
+"Description": "+1 Scrap per level when running Gold Scrap Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+1", "Q", "Gold Scrap"]}]
+},
+{
+"Group": "Rare Scrap Productivity",
+"Name": "Fluorine Scrap Productivity",
+"Description": "+1 Scrap per level when running Fluorine Scrap Recipes",
+"Level": 0,
+"Rules": [{"Recipe":["Out", "+1", "Q", "Fluorine Scrap"]}]
+}
+]

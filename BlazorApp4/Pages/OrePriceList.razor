@@ -1,0 +1,66 @@
+﻿@page "/orepicelist"
+<h3>OrePriceList</h3>
+
+
+@if (Price == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Ore</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var ore in Price)
+            {
+                <tr>
+                    <td>@ore.Key</td>
+                    <td>@ore.Value</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+
+@code {
+
+    public Dictionary<string, double> Price = new Dictionary<string, double>(5);
+
+    protected override async Task OnInitializedAsync()
+    {
+        Price.Add("Bauxite", 22.00);
+        Price.Add("Coal", 22.00);
+        Price.Add("Hematite", 25.00);
+        Price.Add("Quartz", 20.00);
+
+        Price.Add("Chromite", 40.00);
+        Price.Add("Limestone", 55.00);
+        Price.Add("Malachite", 43.12);
+        Price.Add("Natron", 36.00);
+
+        Price.Add("Acanthite", 115.00);
+        Price.Add("Garnierite", 50.00);
+        Price.Add("Petalite", 70.00);
+        Price.Add("Pyrite", 70.00);
+
+        Price.Add("Cobaltite", 600.00);
+        Price.Add("Cryolite", 375.00);
+        Price.Add("Gold Nuggets", 232.00);
+        Price.Add("Kolbeckite", 305.00);
+
+        Price.Add("Columbite", 500.00);
+        Price.Add("Illmenite", 600.00);
+        Price.Add("Rhodonite", 231.00);
+        Price.Add("Thoramine", 1.00);
+        Price.Add("Vanadinite", 556.00);
+    }
+
+
+}

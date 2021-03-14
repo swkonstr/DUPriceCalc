@@ -1,0 +1,58 @@
+﻿@inject HttpClient Http
+@inherits LayoutComponentBase
+
+@if (SkillArray == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <div class="container">
+        <MatH5>Pricelist calculator</MatH5>
+        <MatSubtitle1>1. Set skills and ore prices.</MatSubtitle1>
+        <MatSubtitle1>2. Enjoy.</MatSubtitle1>
+        <MatTabGroup>
+            <MatTab Label="SkillsTest">
+                <BlazorApp4.Pages.CraftSkills @bind-SkillArray = "SkillArray" @bind-SkillGroups="SkillGroups" />
+            </MatTab>
+            <MatTab Label="Skills">
+                <BlazorApp4.Pages.CraftSkills2 @bind-SkillArray = "SkillArray" @bind-SkillGroups="SkillGroups" />
+            </MatTab>
+            <MatTab Label="Ore Prices">
+                <BlazorApp4.Pages.OrePriceList />
+            </MatTab>
+        </MatTabGroup>
+
+    </div>
+}
+
+
+@code
+{
+    // Массив скиллов
+    public Models.Skill[] SkillArray;
+    // Сгруппированные скиллы
+    public IEnumerable<IGrouping<string, Models.Skill>> SkillGroups;
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Загружаем скиллы по умолчанию и группируем
+        SkillArray = await Http.GetFromJsonAsync<Models.Skill[]>("sample-data/craftskills.json");
+        SkillGroups = SkillArray.GroupBy(i => i.Group);
+    }
+
+
+    //<div class="sidebar">
+    //    <NavMenu />
+    //</div>
+
+    //<div class="main">
+    //    <div class="top-row px-4">
+    //        <a href="http://blazor.net" target="_blank" class="ml-md-auto">About</a>
+    //    </div>
+
+    //    <div class="content px-4">
+    //        @Body
+    //    </div>
+    //</div>
+    }

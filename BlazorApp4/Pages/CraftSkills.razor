@@ -1,0 +1,69 @@
+﻿@page "/craftskillarray"
+@inject HttpClient Http
+
+<h3>CraftSkills</h3>
+
+
+@if (SkillArray == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Group</th>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var skill in SkillArray)
+            {
+            <tr>
+                <td>@skill.Group</td>
+                <td>@skill.Name</td>
+                <td>@skill.Description</td>
+                <td>@skill.Level</td>
+                @* <td>
+                    <MatRadioGroup @bind-Value="@Val1" TValue="string">
+            <MatRadioButton Value="@string.Empty" TValue="string">1</MatRadioButton>
+            <MatRadioButton Value="@("f")" Label="2" TValue="string"></MatRadioButton>
+            <MatRadioButton Value="@("m")" TValue="string">3</MatRadioButton>
+            <MatRadioButton Value="@("d")" Disabled="true" TValue="string">4</MatRadioButton>
+        </MatRadioGroup>
+                </td>*@
+
+            </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+@code {
+    [Parameter]
+    public Models.Skill[] SkillArray { get; set; }
+
+    [Parameter]
+    public EventCallback<Models.Skill[]> SkillArrayChanged { get; set; }
+
+    async Task UpdateSkillArray()
+    {
+        await SkillArrayChanged.InvokeAsync(SkillArray);
+    }
+
+    [Parameter]
+    public IEnumerable<IGrouping<string, Models.Skill>> SkillGroups { get; set; }
+
+    [Parameter]
+    public EventCallback<IEnumerable<IGrouping<string, Models.Skill>>> SkillGroupsChanged { get; set; }
+
+    async Task UpdateSkillGroups()
+    {
+        await SkillGroupsChanged.InvokeAsync(SkillGroups);
+    }
+
+
+}
